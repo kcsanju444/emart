@@ -49,7 +49,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           children: <Widget>[
             const CircleAvatar(
               radius: 50,
-              backgroundImage: AssetImage('assets/images/luffy.jpg'),
+              backgroundImage: AssetImage('assets/images/buddha.jpg'),
             ),
             const Text(
               "Sanju KC",
@@ -70,7 +70,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 children: [
                   ListTile(
                     onTap: () {
-                      Navigator.pushNamed(context, '/editprofile');
+                      Navigator.pushNamed(context, '/edit');
                     },
                     leading: Icon(Icons.person),
                     title: Text("Edit profile"),
@@ -88,7 +88,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                   ListTile(
                     onTap: () {
-                      Navigator.pushNamed(context, '/myproduct');
+                      Navigator.pushNamed(context, '/myproducts');
                     },
                     leading: Icon(Icons.shopping_bag),
                     title: Text("My product"),
@@ -100,8 +100,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       Navigator.pushNamed(context, '/favourite');
                     },
                     leading: Icon(Icons.favorite_border),
-                    title: Text("My product"),
-                    subtitle: Text("Show all your product"),
+                    title: Text("favourite"),
+                    subtitle: Text("Show all your favourite"),
                     trailing: Icon(Icons.arrow_forward_ios),
                   ),
                 ],
