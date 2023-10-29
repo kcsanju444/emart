@@ -12,6 +12,7 @@ import 'package:emart/screens/ProfileScreen.dart';
 import 'package:emart/screens/RegisterScreen.dart';
 import 'package:emart/screens/SearchScreen.dart';
 import 'package:emart/screens/SplashScreen.dart';
+import 'package:emart/screens/TestScreen.dart';
 import 'package:emart/services/Auth.dart';
 import 'package:emart/widgets/Navbar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -45,6 +46,7 @@ void main() async {
       '/changepassword': (context) => ChangePasswordScreen(),
       '/editproduct': (context) => EditProductsScreen(),
       '/favourite': (context) => Favourite(),
+      '/test': (context) => TestScreen(),
     },
   ));
 }
